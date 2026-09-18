@@ -1,0 +1,22 @@
+{
+  "name": "payrollcall-data",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local CLI to download Congress.gov (and Senate LIS) data for PayRollCall design review",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "payrollcall-data": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "fetch": "node src/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "fast-xml-parser": "^5.2.5"
+  }
+}
